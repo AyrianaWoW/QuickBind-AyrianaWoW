@@ -188,6 +188,7 @@ function QuickBind.AddKeyToBinding(key)
     end
     
     SetBinding(key, binding);
+    SaveBindings(GetCurrentBindingSet()); -- Saves bindings between sessions, code added by Ayri of Turtle WoW
 end
 
 -- Sets the last button the player has hovered his mouse over and registers its events
